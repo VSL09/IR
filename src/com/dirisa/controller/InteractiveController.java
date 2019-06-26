@@ -21,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 public class InteractiveController 
 {
 
+	
 	      public static String getText(String url) throws Exception 
 	      {
 	            URL website = new URL(url);
@@ -40,7 +41,7 @@ public class InteractiveController
 
 	      
 
-	    
+	    //landing
 	    @RequestMapping("/landing")
 	    public ModelAndView Landing(HttpServletRequest request, HttpServletResponse response) throws Exception
 	    {
