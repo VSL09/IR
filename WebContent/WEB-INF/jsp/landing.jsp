@@ -15,11 +15,13 @@
     </div>
      
   </div>
+	  
+	  <p>
  
 
 						<c:forEach items="${list}" var="l">
 
-<p>
+
 							<c:out value="${l.description}" />
 							<c:out value="${l.creator}" />
 						</p>
