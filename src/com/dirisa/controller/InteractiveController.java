@@ -1,17 +1,16 @@
 package com.dirisa.controller;
 
 import java.io.BufferedReader;
-
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
@@ -42,12 +41,14 @@ public class InteractiveController
 	      
 
 	    //landing
-	    @RequestMapping("/landing")
-	    public ModelAndView Landing(HttpServletRequest request, HttpServletResponse response) throws Exception
+	    @RequestMapping(value = "/landing", method = RequestMethod.GET)
+	    public ModelAndView Landing(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "search_term", required=false, defaultValue = "i") String search_term) throws Exception
 	    {
-	    	
+
 	    	// load API data to java Json Object
-            JSONArray jsonArray=new JSONArray(getText("http://localhost/DB/index.php")); 
+
+            JSONArray jsonArray=new JSONArray(getText("http://localhost/index.php?search_term="+search_term)); 
+
      
             //convert jsonArray to list to easily process in UI
             List<JSONArray> list = (List) jsonArray.toList();
