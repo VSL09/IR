@@ -47,7 +47,7 @@ public class InteractiveController
 	    {
 	    	
 	    	// load API data to java Json Object
-            JSONArray jsonArray=new JSONArray(getText("http://localhost/UP/index.php")); 
+            JSONArray jsonArray=new JSONArray(getText("http://localhost/DB/index.php")); 
      
             //convert jsonArray to list to easily process in UI
             List<JSONArray> list = (List) jsonArray.toList();
