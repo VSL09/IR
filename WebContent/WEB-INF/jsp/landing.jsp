@@ -3,7 +3,6 @@
   <!-- Search bar with a button -->
   
   <div class="main">
- 
   <h1 align = "center" > UniShare  </h1>
 
 <p align = "center"> Connecting South African Universities and share journals on one search engine</p>
