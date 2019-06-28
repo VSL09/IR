@@ -46,6 +46,7 @@
 </style>
 </head>
 
+
 <body>
 	<div class="main">
 		<h1 align="center">UniShare</h1>
@@ -53,18 +54,21 @@
 			journals on one search engine</p>
 		<form action="landing.htm" method="get">
 		<div class="input-group">
+	
 			<input type="text" name="search_term" class="form-control" placeholder="Search here" >
 			 <div class="input-group-append">
 			<button input type="submit"  class="btn btn-secondary" type = "button">
 			 <i class="fa fa-search"></i>
 			  </button>
+			 
 			 </div>
 			</form>
 			
 		</div>
+			
 		
 		<c:forEach items="${list}" var="l">
-			<p>
+			<p >
 				<c:out value="${l.subject}" />
 				<br>
 				<c:out value="${l.creator}" />
