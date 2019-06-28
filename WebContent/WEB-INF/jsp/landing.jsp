@@ -62,6 +62,7 @@
 			</form>
 			
 		</div>
+		
 		<c:forEach items="${list}" var="l">
 			<p>
 				<c:out value="${l.subject}" />
