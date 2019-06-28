@@ -51,11 +51,16 @@
 		<h1 align="center">UniShare</h1>
 		<p align="center">Connecting South African Universities and share
 			journals on one search engine</p>
-		<div class="input-group">
 		<form action="landing.htm" method="get">
+		<div class="input-group">
 			<input type="text" name="search_term" class="form-control" placeholder="Search here" >
-			<input type="submit" value="Search" class="btn btn-secondary">  
+			 <div class="input-group-append">
+			<button input type="submit"  class="btn btn-secondary" type = "button">
+			 <i class="fa fa-search"></i>
+			  </button>
+			 </div>
 			</form>
+			
 		</div>
 		<c:forEach items="${list}" var="l">
 			<p>
