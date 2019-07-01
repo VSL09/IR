@@ -43,9 +43,40 @@
 	pointer-events: none;
 	color: #aaa;
 }
+
+div.hidden
+{
+   display: none //testing
+}
+
+div.test
+{
+   display: block !important //testing
+}
+
+
+
 </style>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
 
+$(document).ready(function() {
+	$(".test").hide();
+  
+   $("button").click(function()
+		   {
+			   $(".test").toggle(400);
+			   
+		   });
+   
+});
+
+
+
+
+
+</script>
 
 <body>
 	<div class="main">
@@ -63,13 +94,15 @@
 			 
 			 </div>
 			</form>
-			
+		
 		</div>
 			
 		
-		<c:forEach items="${list}" var="l">
-			<p >
-				<c:out value="${l.subject}" />
+
+		<c:forEach  items="${list}" var="l">
+		<div  class = "test"> <!-- testing -->
+			<p  >
+				<c:out  value="${l.subject}" />
 				<br>
 				<c:out value="${l.creator}" />
 				<br>
@@ -78,6 +111,7 @@
 			</p>
 			<hr />
 		</c:forEach>
+		</div> <!-- testing -->
 	</div>
 </body>
 </html>
