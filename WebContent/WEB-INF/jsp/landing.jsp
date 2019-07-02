@@ -66,7 +66,7 @@ $(document).ready(function() {
   
    $("button").click(function()
 		   {
-			   $(".test").toggle(400);
+			   $(".test").show();
 			   
 		   });
    
@@ -81,8 +81,7 @@ $(document).ready(function() {
 <body>
 	<div class="main">
 		<h1 align="center">UniShare</h1>
-		<p align="center">Connecting South African Universities and share
-			journals on one search engine</p>
+		<p align="center">Connecting research data repositories of South African tetiary institutions on one search engine</p>
 		<form action="landing.htm" method="get">
 		<div class="input-group">
 	
