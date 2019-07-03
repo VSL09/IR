@@ -58,25 +58,6 @@ div.test
 
 </style>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-$(document).ready(function() {
-	$(".test").hide();
-  
-   $("button").click(function()
-		   {
-			   $(".test").show();
-			   
-		   });
-   
-});
-
-
-
-
-
-</script>
 
 <body>
 	<div class="main">
@@ -99,7 +80,7 @@ $(document).ready(function() {
 		
 
 		<c:forEach  items="${list}" var="l">
-		<div  class = "test"> <!-- testing -->
+		<div> 
 			<p  >
 				<c:out  value="${l.subject}" />
 				<br>
@@ -110,7 +91,7 @@ $(document).ready(function() {
 			</p>
 			<hr />
 		</c:forEach>
-		</div> <!-- testing -->
+		</div> 
 	</div>
 </body>
 </html>
