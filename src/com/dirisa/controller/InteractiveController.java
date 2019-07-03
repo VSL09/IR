@@ -42,7 +42,7 @@ public class InteractiveController
 
 	    //landing
 	    @RequestMapping(value = "/landing", method = RequestMethod.GET)
-	    public ModelAndView Landing(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "search_term", required=false, defaultValue = "i") String search_term) throws Exception
+	    public ModelAndView Landing(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "search_term", required=false, defaultValue = "B3J#7WM6YaJMVW4kB3J#7WM6YaJMVW4kB3J#7WM6YaJMVW4kB3J#7WM6YaJMVW4k") String search_term) throws Exception
 	    {
 
 	    	// load API data to java Json Object
