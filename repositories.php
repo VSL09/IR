@@ -7,7 +7,7 @@ $array = array();
 $search_term = isset($_GET['search_term']) ? $_GET['search_term'] : '';
 
 //sql query
-$sql = "SELECT * FROM journal where (subject like '%$search_term%' OR description like '%$search_term%' OR identifier like '%$search_term%' )";
+$sql = "SELECT * FROM journal where (subject like '%$search_term%' OR description like '%$search_term%' OR identifier like '%$search_term%'   OR creator like '%$search_term%' )";
 
 $dbhost = "localhost";
 $dbuser = "root";
